@@ -1,0 +1,14 @@
+p, h1, h2, h3, a {
+    font-family:'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-weight:900;
+    font-size:larger;
+}
+
+p {
+    font-size: small;
+    line-height: 1.5;
+}
+

@@ -1,0 +1,65 @@
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/IMG_1764\ 3.jpeg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  color:aliceblue;
+}
+
+.biography {
+  flex: 43%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.picContainer {
+  flex: 43%;
+  margin-left: 40px;
+  margin-right: 0px;
+  margin-top: 10px;
+}
+
+.danPic {
+  max-width: 88%;
+  max-height: 88%;
+}
+
+.buffer {
+  background-color: black;
+}
+
+.pageTitle {
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 558px) {
+  section{
+    flex-direction: column-reverse;
+  }
+
+  .picContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .danPic{
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    max-height: 50%;
+  }
+
+}

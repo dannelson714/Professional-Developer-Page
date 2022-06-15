@@ -1,0 +1,97 @@
+.container {
+    transition: 0s;
+}
+
+p {
+    color:aliceblue;
+    line-height: 0;
+}
+
+h1 {
+    color:aliceblue;
+}
+
+a {
+    color:aliceblue;
+}
+
+a:link {
+    text-decoration: none;
+    color: white
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.project {
+    transition: .4s;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.front-side {
+    color: aliceblue;
+    z-index: 1;
+    transform: scale(0.9);
+    opacity: 1;
+    transition: .4s;
+}
+
+.project:hover .front-side {
+    opacity: 0;
+}
+
+.back-side {
+    color:aliceblue;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    z-index: 2;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: .4s;
+}
+
+.project:hover .back-side {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    opacity: 1;
+}
+
+.project:hover .card-text{
+    margin: 10px;
+}
+
+.card-text {
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.tech-text {
+    justify-content: center;
+    text-align: center;
+}
+
+.github {
+    margin-right: 6px;
+    font-size: x-large;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+

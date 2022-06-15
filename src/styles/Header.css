@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color:aliceblue;
+  transition: .5s;
+}
+
+.trans {
+  background-color: black;
+}
+
+.nav-logo {
+  position: absolute;
+  justify-content: baseline;
+  font-size: large;
+  top: 6px;
+  left: 10px;
+  
+  flex-wrap: nowrap;
+ 
+} 
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  transition: .5s;
+}
+
+a {
+  font-size: small;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+li {
+  list-style: none;
+  transition: 0.5s;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s;
+}
+
+.nav-item {
+  margin-left: .75rem;
+}
+
+.nav-link{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #475569;
+}
+
+.nav-link:hover{
+  color: #482ff7;
+}
+
+.nav-logo {
+  font-size: 2.1rem;
+  font-weight: 500;
+  color: #482ff7;
+}
+
+.hamburger {
+  top: 100px;
+  display: none;
+  transition: 3s;
+}
+
+.bar {
+  display: block;
+  width: 22px;
+  height: 1px;
+  top: -1px;
+  margin: 5px auto;
+  -webkit-transition: all .5s;
+  transition: all 0.5s;
+  background-color: aliceblue;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width: 558px) {
+  .nav-menu {
+      position: fixed;
+      z-index: 90;
+      left: -100%;
+      top: 2.4rem;
+      bottom: 0rem;
+      flex-direction: column;
+      background-color: black;
+      width: 100%;
+      justify-content: space-around;
+      text-align: center;
+      transition: 0.5s;
+      /* box-shadow:
+          0 10px 27px rgba(0, 0, 0, 0.05); */
+  }
+
+  .nav-menu.active {
+      left: 0;
+      transition: .5s;
+  }
+
+  li.active {
+    transition: 0s;
+  }
+
+  .nav-item {
+      margin: .05rem 0;
+      top: -5px;
+  }
+
+  .hamburger {
+      display: block;
+      cursor: pointer;
+      transition: .5s;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    transition: .5s;
+}
+
+  .header.active {
+    background-color: black;
+  }
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+}
+
+
+@media screen and (max-width: 468px) {
+  header {
+    flex-direction: column;
+  }
+}

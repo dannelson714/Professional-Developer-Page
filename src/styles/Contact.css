@@ -1,0 +1,28 @@
+.contactPage {
+    background-color: black;
+}
+
+.contactTitle {
+    margin-left: 10px;
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;  
+}
+
+.subBtn {
+    width: 75px;
+    height: 45px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: gray;
+    color: aliceblue;
+    border: 0px;
+
+
+}
+
