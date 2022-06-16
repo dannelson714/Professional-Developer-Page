@@ -1,15 +1,13 @@
 import React from 'react';
 import '../styles/Home.css';
-import {useNavigate} from "react-router-dom"
+import {useNavigate, Link } from "react-router-dom"
 
 export default function Home() {
   const navigate = useNavigate();
   return (
     <div className="panels">
       <div className="panel panel1">
-      <a 
-                    href="/about"
-                >Biography</a>
+      <Link to='/about'>Biography</Link>
       </div>
       <div className="panel panel2">
       <a 
