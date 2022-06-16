@@ -9,7 +9,7 @@ export default function Home() {
       <div className="panel panel1">
       <a 
                     href="#about"
-                    onClick={() => navigate("/about")}
+                    onClick={() => navigate("#about")}
                 >Biography</a>
       </div>
       <div className="panel panel2">
