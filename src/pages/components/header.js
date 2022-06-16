@@ -64,22 +64,22 @@ function Header() {
             <a href="/"  className="nav-logo" onClick={() => navigate("/")}>Daniel Nelson</a>
             <ul className={`nav-menu ${active ? "active" : ""}`}>
                 <li className="nav-item">
-                  <a href="#about" onClick={() => navigate("/about")}>
+                  <a href="/about" onClick={() => navigate("/about")}>
                     Biography
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="#projects" onClick={() => navigate("/projects")}>
+                  <a href="/projects" onClick={() => navigate("/projects")}>
                     Portfolio
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="#skills" onClick={() => navigate("/skills")}>
+                  <a href="/skills" onClick={() => navigate("/skills")}>
                     Experience
                   </a>               
                 </li>
                 <li className="nav-item">
-                  <a href="#contact" onClick={() => navigate("/contact")}>
+                  <a href="/contact" onClick={() => navigate("/contact")}>
                     Contact
                   </a>             
                 </li>
