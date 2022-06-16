@@ -2,7 +2,7 @@
     "name": "Professional Portfolio",
     "version": "0.1.0",
     "private": true,
-    "homepage": "https://dannelson714.github.io/Web-Dev-Portfolio",
+    "homepage": "https://dannelson714.github.io/Professional-Developer-Page/",
     "dependencies": {
         "@apollo/client": "^3.5.8",
         "@emailjs/browser": "^3.6.2",
