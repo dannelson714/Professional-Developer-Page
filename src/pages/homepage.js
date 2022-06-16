@@ -8,25 +8,25 @@ export default function Home() {
     <div className="panels">
       <div className="panel panel1">
       <a 
-                    href="/about"
+                    href="#about"
                     onClick={() => navigate("/about")}
                 >Biography</a>
       </div>
       <div className="panel panel2">
       <a 
-                    href="/projects"
+                    href="#projects"
                     onClick={() => navigate("/projects")}
                 >Portfolio</a>
       </div>
       <div className="panel panel3">
       <a 
-                    href="/skills"
+                    href="#skills"
                     onClick={() => navigate("/skills")}
                 >Experience</a>
       </div>
       <div className="panel panel4">
       <a 
-                    href="/contact"
+                    href="#contact"
                     onClick={() => navigate("/contact")}
                 >Contact</a>
       </div>
