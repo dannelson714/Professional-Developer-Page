@@ -27,7 +27,7 @@ import './styles/index.css';
 
 function App() {
   return (
-      <Router basename="/Professional-Developer-Page">
+      <Router>
         <div className="flex-column justify-center align-center min-100-vh bg-primary">
           <Routes>
             <Route path="/" element={<Home />} />
