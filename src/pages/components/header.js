@@ -3,6 +3,7 @@ import "../../styles/Header.css";
 import {
   useNavigate,
   useLocation,
+  Link
 } from "react-router-dom";
 import { Github, Twitter, Linkedin } from "react-bootstrap-icons";
 
@@ -61,27 +62,19 @@ function Header() {
   return (
     <header className={`header ${trans ? "trans" : ""} ${active ? "active" : ""}`}>
         <nav className="navbar">
-            <a href="/"  className="nav-logo" onClick={() => navigate("/")}>Daniel Nelson</a>
+            <Link to='/' className="nav-logo">Daniel Nelson</Link>
             <ul className={`nav-menu ${active ? "active" : ""}`}>
                 <li className="nav-item">
-                  <a href="#about" onClick={() => navigate("/about")}>
-                    Biography
-                  </a>
+                <Link to='/about'>Biography</Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#projects" onClick={() => navigate("/projects")}>
-                    Portfolio
-                  </a>
+                  <Link to='/projects'>Portfolio</Link>
                 </li>
                 <li className="nav-item">
-                  <a href="#skills" onClick={() => navigate("/skills")}>
-                    Experience
-                  </a>               
+                  <Link to='/skills'>Experience</Link>              
                 </li>
                 <li className="nav-item">
-                  <a href="#contact" onClick={() => navigate("/contact")}>
-                    Contact
-                  </a>             
+                  <Link to='/contact'>Contact</Link>            
                 </li>
                 <li className="nav-item">
                   <a
