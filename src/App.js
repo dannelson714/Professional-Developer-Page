@@ -1,10 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {
-  ApolloClient,
-  ApolloProvider,
-  InMemoryCache,
-} from "@apollo/client";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import About from "./pages/about";
 import Projects from "./pages/projects";
@@ -30,15 +25,8 @@ import './styles/index.css';
 //   };
 // });
 
-const client = new ApolloClient({
-  // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
-  // link: authLink.concat(httpLink),
-  cache: new InMemoryCache(),
-});
-
 function App() {
   return (
-    <ApolloProvider client={client}>
       <Router>
         <div className="flex-column justify-center align-center min-100-vh bg-primary">
           <Routes>
@@ -50,7 +38,6 @@ function App() {
           </Routes>
         </div>
       </Router>
-    </ApolloProvider>
   );
 }
 
