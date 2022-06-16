@@ -1,6 +1,5 @@
 import React from "react";
 import '../../styles/Footer.css';
-import { Github, Twitter, Linkedin } from 'react-bootstrap-icons'
 import backgroundPic from '../../images/4056 (1) 4.jpeg'
 
 

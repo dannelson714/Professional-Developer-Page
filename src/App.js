@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
-  createHttpLink,
   ApolloClient,
   ApolloProvider,
   InMemoryCache,
@@ -12,9 +11,6 @@ import Projects from "./pages/projects";
 import Home from "./pages/homepage"
 import Skills from "./pages/skills"
 import Contact from "./pages/contact"
-import Header from "./pages/components/header";
-import Footer from "./pages/components/footer"
-import { setContext } from "@apollo/client/link/context";
 import './styles/index.css';
 
 

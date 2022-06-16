@@ -2,8 +2,6 @@ import React from 'react';
 import '../styles/Home.css';
 import {useNavigate} from "react-router-dom"
 
-import danPic from '../../src/images/4056 (1).jpeg';
-
 export default function Home() {
   const navigate = useNavigate();
   return (

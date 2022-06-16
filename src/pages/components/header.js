@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import "../../styles/Header.css";
 import {
   useNavigate,
-  Navigate,
-  useParams,
   useLocation,
 } from "react-router-dom";
 import { Github, Twitter, Linkedin } from "react-bootstrap-icons";
@@ -16,9 +14,6 @@ function Header() {
 
   //To capture the logic for whether the hamburger is clicked on
   const [active, setActive] = useState(false);
-
-  //To capture the logic for whether this page is the current page
-  const [current, setCurrent] = useState(false);
 
   useEffect(() => {
     const pageName = location.pathname;
@@ -84,7 +79,7 @@ function Header() {
                   </a>               
                 </li>
                 <li className="nav-item">
-                  <a className={`${current ? "current" : ""}`}href="/contact" onClick={() => navigate("/contact")}>
+                  <a href="/contact" onClick={() => navigate("/contact")}>
                     Contact
                   </a>             
                 </li>

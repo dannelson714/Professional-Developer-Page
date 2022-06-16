@@ -1,4 +1,3 @@
-import { forgetCache } from '@apollo/client/cache/inmemory/reactiveVars';
 import React, { useState, useRef } from 'react';
 import { validateEmail } from '../utils/helpers';
 import emailjs from '@emailjs/browser';
@@ -16,7 +15,6 @@ function Contact() {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const [status, setStatus] = useState("Submit");
 
   //https://www.emailjs.com/docs/examples/reactjs/
   const form = useRef();
@@ -65,13 +63,10 @@ function Contact() {
         setErrorMessage('Please provide your name and message');
     }
 
-    setStatus("Sending...");
     const result = emailjs.sendForm('service_pdl6ucm', 'template_bx719d2', form.current, '03BcNqaRuqe1AOKTF')
     if (result) {
       console.log(result.text);
     }  
-
-    setStatus("Submit");
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setName('');
