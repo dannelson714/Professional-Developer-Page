@@ -1,0 +1,26 @@
+.skillsPage {
+    background-color: black;
+}
+
+.skills {
+    margin-left: 10px;
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+}
+
+.resume {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style:solid;
+    border-color: aliceblue;
+}

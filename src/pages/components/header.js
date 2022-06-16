@@ -17,12 +17,13 @@ function Header() {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
-    const pageName = location.pathname;
+    let pageName = location.pathname;
+    pageName = "https://dannelson714.github.io/Professional-Developer-Page/#" + pageName;
     const aTag = document.getElementsByTagName("a");
     console.log(aTag);
     console.log(pageName);
     for (let i=1; i<aTag.length; i++) {
-      if (pageName === aTag[i].pathname) {
+      if (pageName === aTag[i].href) {
         aTag[i].style.textDecoration = 'underline';
       }
     }
