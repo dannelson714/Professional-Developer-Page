@@ -69,7 +69,7 @@ export default function Projects() {
     <div>
       <Header />
       <div style={{
-        height: "350px", 
+        height: "600px", 
         width:"100%", 
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('${backgroundPic}')`,
         backgroundPosition: "center",

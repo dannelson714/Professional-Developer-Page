@@ -78,7 +78,7 @@ function Contact() {
     <div>
       <Header />
       <div style={{
-        height: "350px", 
+        height: "600px", 
         width:"100%", 
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('${backgroundPic}')`,
         backgroundPosition: "center",
@@ -93,18 +93,20 @@ function Contact() {
         <div>
           <p className="contactTitle">Contact</p>
           <form ref={form} onSubmit={sendEmail} className="form" id="contactForm">
-            <p className="nameName">Name *</p>
+            <p className="nameName">Name <span className="ast">*</span></p>
             <input
+              className="input-field"
               value={name}
               name="name"
               onChange={handleInputChange}
               onBlur={handleOnBlur}
               type="name"
             />
-            <p className="nameName"></p>
+            <p></p>
             <div style={{height: "20px", width:"100%", clear:"both"}}></div>
-            <p>Email *</p>
+            <p className="nameName">Email <span className="ast">*</span></p>
             <input
+              className="input-field"
               value={email}
               name="email"
               onChange={handleInputChange}
@@ -112,12 +114,13 @@ function Contact() {
               type="email"
             />
             <div style={{height: "20px", width:"100%", clear:"both"}}></div>
-            <p>Message *</p>
+            <p className="nameName">Message <span className="ast">*</span></p>
             <textarea
+              className="text-field"
               value={message}
               form="contactForm"
               name="message"
-              rows="5"
+              rows="10"
               cols="36"
               onChange={handleInputChange}
               onBlur={handleOnBlur}

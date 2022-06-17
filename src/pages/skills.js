@@ -10,7 +10,7 @@ export default function Skills() {
     <div>
       <Header />
       <div style={{
-        height: "350px", 
+        height: "600px", 
         width:"100%", 
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('${backgroundPic}')`,
         backgroundPosition: "center",
@@ -27,12 +27,12 @@ export default function Skills() {
           <p>
           <a className="resume" href={CV}>Resume</a>
           <ul>
-            <li>Dynamic & Reactive Web Development | React.js, JavaScript, HTML5, CSS3, Bootstrap</li>
-            <li>Data-Driven Computing | jQuery, RESTful APIs, JSON, AJAX</li>
-            <li>Back-End Development | Node.js, Express.js, MySQL, Sequelize, NoSQL (MongoDB), Insomnia</li>
-            <li>Scripting | Python, Linux bash/shell, Unit testing</li>
-            <li>Progressive Web Application | Asynchronous & Distributed Computing</li>
-            <li>General Computer Science | Data Structures, Algorithms, Resource Management</li>
+            <li className="skills-list">Dynamic & Reactive Web Development | React.js, JavaScript, HTML5, CSS3, Bootstrap</li>
+            <li className="skills-list">Data-Driven Computing | jQuery, RESTful APIs, JSON, AJAX</li>
+            <li className="skills-list">Back-End Development | Node.js, Express.js, MySQL, Sequelize, NoSQL (MongoDB), Insomnia</li>
+            <li className="skills-list">Scripting | Python, Linux bash/shell, Unit testing</li>
+            <li className="skills-list">Progressive Web Application | Asynchronous & Distributed Computing</li>
+            <li className="skills-list">General Computer Science | Data Structures, Algorithms, Resource Management</li>
           </ul>
           </p>
         </div>

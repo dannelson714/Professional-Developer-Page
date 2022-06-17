@@ -4,7 +4,7 @@
 
 .contactTitle {
     margin-left: 10px;
-    font-size: 2.1rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -16,13 +16,32 @@
 }
 
 .subBtn {
-    width: 75px;
-    height: 45px;
+    width: 125px;
+    height: 65px;
     font-family:'Times New Roman', Times, serif;
     background-color: gray;
     color: aliceblue;
     border: 0px;
-
-
+    font-size: 1.4rem;
 }
 
+.nameName {
+    color: aliceblue;
+    font-size: 1.6rem;
+}
+
+.ast {
+    color:aliceblue;
+    font-size: 1.1rem;
+}
+
+.input-field {
+    height: 40px;
+    font-size: 1.4rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.text-field {
+    font-size: 1.4rem;
+    font-family:'Times New Roman', Times, serif;
+}

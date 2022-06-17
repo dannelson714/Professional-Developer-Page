@@ -16,7 +16,7 @@ section {
 
 .biography {
   flex: 43%;
-  margin-left: 10px;
+  margin-left: 20px;
   margin-right: 10px;
 }
 
@@ -37,8 +37,12 @@ section {
 }
 
 .pageTitle {
-  font-size: 2.1rem;
+  font-size: 3rem;
   font-weight: 500;
+}
+
+.aboutText {
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 558px) {

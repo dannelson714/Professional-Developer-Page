@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
       <div style={{
-        height: "300px", 
+        height: "500px", 
         width:"100%", 
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('${backgroundPic}')`,
         backgroundPosition: "center",

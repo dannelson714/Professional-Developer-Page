@@ -4,7 +4,7 @@
 
 .skills {
     margin-left: 10px;
-    font-size: 2.1rem;
+    font-size: 3rem;
     font-weight: 500;
 }
 
@@ -14,7 +14,8 @@
 }
 
 .resume {
-    font-size: 1.5rem;
+    color: aliceblue;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     border-bottom: 1px;
@@ -23,4 +24,9 @@
     border-right: 0px;
     border-style:solid;
     border-color: aliceblue;
+}
+
+.skills-list {
+    color: aliceblue;
+    font-size: 1.4rem;
 }

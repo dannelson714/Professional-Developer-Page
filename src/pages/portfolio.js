@@ -18,11 +18,11 @@ export default function Portfolio(props) {
                             key={item.id}
                             style = {{
                                 border: '.01em solid black',
-                                margin: "1rem",
+                                margin: "2rem",
                                 fontSize: "1.5rem",
                                 padding: ".5rem .5rem",
-                                height: "8rem",
-                                width: "18rem",
+                                height: "14rem",
+                                width: "28rem",
                                 justifyContent: "center",
                                 color: "white",
                                 background: "rgba(0,0,0,0.4)",
@@ -32,7 +32,7 @@ export default function Portfolio(props) {
                             }}
                             >
                                 <span className='front-side'>
-                                    <h5 className="card-title"> {item.name}</h5>
+                                    <p className='frontText'>{item.name}</p>
                                 </span>
                                 <span className='back-side'>
                                     <a 
