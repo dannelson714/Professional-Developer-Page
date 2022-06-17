@@ -153,8 +153,14 @@ li {
 }
 
 
-@media screen and (max-width: 468px) {
+@media screen and (max-width: 368px) {
   header {
     flex-direction: column;
+  }
+
+  .nav-logo {
+    font-size: 3rem;
+    font-weight: 500;
+    color: #482ff7;
   }
 }
