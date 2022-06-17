@@ -26,9 +26,9 @@ function Contact() {
     const inputValue = target.value;
 
     // Based on the input type, we set the state of either email, username, and password
-    if (inputType === 'email') {
+    if (inputType === 'user_email') {
       setEmail(inputValue);
-    } else if (inputType === 'name') {
+    } else if (inputType === 'user_name') {
       setName(inputValue);
     } else {
       setMessage(inputValue);
@@ -97,7 +97,7 @@ function Contact() {
             <input
               className="input-field"
               value={name}
-              name="name"
+              name="user_name"
               onChange={handleInputChange}
               onBlur={handleOnBlur}
               type="name"
@@ -108,7 +108,7 @@ function Contact() {
             <input
               className="input-field"
               value={email}
-              name="email"
+              name="user_email"
               onChange={handleInputChange}
               onBlur={handleOnBlur}
               type="email"
@@ -127,7 +127,7 @@ function Contact() {
             />
             <div style={{height: "20px", width:"100%", clear:"both"}}></div>
             <input className="subBtn" type="submit" value="Send" />
-            </form>
+          </form>
                   
           {errorMessage && (
             <div>
