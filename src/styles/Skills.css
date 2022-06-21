@@ -11,7 +11,7 @@
 .skills-list {
     display: flex;
     justify-content: center;
-    margin: 5px;
+    margin: 10px;
     color: aliceblue;
     font-size: 1.4rem;
 }
