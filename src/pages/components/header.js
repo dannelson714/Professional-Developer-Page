@@ -17,7 +17,6 @@ function Header() {
   const [active, setActive] = useState(false);
 
   const pageRefresh = (e) => {
-    e.preventDefault();
     document.body.style.overflow = "visible";
     setActive(false);
     if(location.pathname === "/projects"){
