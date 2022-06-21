@@ -16,14 +16,15 @@ function Header() {
   //To capture the logic for whether the hamburger is clicked on
   const [active, setActive] = useState(false);
 
-  useEffect(() => {
+  const pageRefresh = (e) => {
+    e.preventDefault();
     document.body.style.overflow = "visible";
     setActive(false);
     if(location.pathname === "/projects"){
       const collection = document.getElementsByClassName('container');
       for (let i=0; i<collection.length; i++) {
         collection[i].style.marginTop = "0px";
-      }}},[])
+      }}}
 
   useEffect(() => {
     let pageName = location.pathname;
@@ -75,16 +76,16 @@ function Header() {
             <Link to='/' className="nav-logo">Daniel Nelson</Link>
             <ul className={`nav-menu ${active ? "active" : ""}`}>
                 <li className="nav-item">
-                <Link to='/about'>Biography</Link>
+                <Link to='/about' onClick={pageRefresh}>Biography</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to='/projects'>Portfolio</Link>
+                  <Link to='/projects' onClick={pageRefresh}>Portfolio</Link>
                 </li>
                 <li className="nav-item">
-                  <Link to='/skills'>Experience</Link>              
+                  <Link to='/skills' onClick={pageRefresh}>Experience</Link>              
                 </li>
                 <li className="nav-item">
-                  <Link to='/contact'>Contact</Link>            
+                  <Link to='/contact' onClick={pageRefresh}>Contact</Link>            
                 </li>
                 <li className="nav-item">
                   <a
@@ -92,6 +93,7 @@ function Header() {
                     href="https://twitter.com/dannelson"
                     role="button"
                     data-mdb-ripple-color="dark"
+                    onClick={pageRefresh}
                   >
                     <Twitter />
                   </a>         
@@ -102,6 +104,7 @@ function Header() {
                     href="https://www.linkedin.com/in/daniel-nelson-24a97123/"
                     role="button"
                     data-mdb-ripple-color="dark"
+                    onClick={pageRefresh}
                   >
                     <Linkedin />
                   </a>         
@@ -112,6 +115,7 @@ function Header() {
                     href="https://github.com/dannelson714"
                     role="button"
                     data-mdb-ripple-color="dark"
+                    onClick={pageRefresh}
                   >
                     <Github />
                   </a>         
