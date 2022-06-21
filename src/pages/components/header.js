@@ -17,6 +17,15 @@ function Header() {
   const [active, setActive] = useState(false);
 
   useEffect(() => {
+    document.body.style.overflow = "visible";
+    setActive(false);
+    if(location.pathname === "/projects"){
+      const collection = document.getElementsByClassName('container');
+      for (let i=0; i<collection.length; i++) {
+        collection[i].style.marginTop = "0px";
+      }}},[])
+
+  useEffect(() => {
     let pageName = location.pathname;
     pageName = "https://dannelson714.github.io/Professional-Developer-Page/#" + pageName;
     const aTag = document.getElementsByTagName("a");
